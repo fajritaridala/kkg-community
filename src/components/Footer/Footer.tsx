@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex items-center-safe gap-3">
           <img
             className="size-12 rounded-md border bg-gray-100 p-1"
-            src="/public/brand/logo-kkg.png"
+            src="/brand/logo-kkg.png"
             alt="Logo KKG"
           />
           <h2 className="text-[1.4rem] font-bold text-gray-100 md:text-2xl">
