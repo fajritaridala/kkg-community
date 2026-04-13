@@ -14,15 +14,15 @@ export default function Home() {
   const brand = [
     {
       name: 'Logo KKG Kecamatan Tinanggea',
-      src: '/public/brand/logo-kkg.png',
+      src: '/brand/logo-kkg.png',
     },
     {
       name: 'Lambang Tutwuri Handayani',
-      src: '/public/brand/tutwuri-handayani.png',
+      src: '/brand/tutwuri-handayani.png',
     },
     {
       name: 'Lambang Kabupaten Konawe Selatan',
-      src: '/public/brand/Lambang_Kabupaten_Konawe_Selatan.png',
+      src: '/brand/Lambang_Kabupaten_Konawe_Selatan.png',
     },
   ]
 
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="flex h-full w-full">
             <img
               className="object-contain"
-              src="/public/brand/logo-kkg.png"
+              src="/brand/logo-kkg.png"
               alt="Logo KKG Kecamatan Tinanggea"
             />
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
         </div>
         <div className="grid-cols-3 space-y-8 px-6 md:grid md:gap-8 md:px-12">
           <DocuCard
-            img="/public/documentation/elyssa-dedios-oP9ePzLBX3s-unsplash.jpg"
+            img="/documentation/elyssa-dedios-oP9ePzLBX3s-unsplash.jpg"
             alt="Dokumentasi keramayan"
             category="workshop"
             year="januari 2025"
@@ -173,7 +173,7 @@ export default function Home() {
             description="sesi intensif pemahaman materi esensial dan proyek penguatan profil pelajar pancasila"
           />
           <DocuCard
-            img="/public/documentation/fotografo-samuel-cruz-s816Ch3ji6E-unsplash.jpg"
+            img="/documentation/fotografo-samuel-cruz-s816Ch3ji6E-unsplash.jpg"
             alt="Dokumentasi keramayan"
             category="workshop"
             year="januari 2025"
@@ -181,7 +181,7 @@ export default function Home() {
             description="sesi intensif pemahaman materi esensial dan proyek penguatan profil pelajar pancasila"
           />
           <DocuCard
-            img="/public/documentation/justin-dyer-VF6v5F7BHqM-unsplash.jpg"
+            img="/documentation/justin-dyer-VF6v5F7BHqM-unsplash.jpg"
             alt="Dokumentasi keramayan"
             category="workshop"
             year="januari 2025"
