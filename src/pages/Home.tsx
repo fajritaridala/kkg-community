@@ -50,39 +50,44 @@ export default function Home() {
   ]
 
   return (
-    <section className="pt-14">
+    <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="flex">
-        <div className="relative -z-10 flex flex-col items-center-safe justify-center-safe space-y-6 py-18 text-center md:w-2/3 md:items-start md:justify-start md:px-12 md:text-left">
+      <div className="mb-8 flex md:mb-18">
+        <div className="relative -z-10 flex flex-col items-center-safe justify-center-safe space-y-6 py-18 text-center md:items-start md:justify-start md:px-12 md:text-left">
           {/* blob start */}
-          <div className="absolute top-20 left-0 h-40 w-40 rounded-full bg-indigo-300 mix-blend-multiply blur-3xl md:top-0 md:-left-20 md:h-80 md:w-80 md:blur-[9rem]"></div>
-          <div className="absolute right-0 bottom-30 h-40 w-40 rounded-full bg-amber-100 mix-blend-multiply blur-3xl md:bottom-10 md:left-20 md:h-52 md:w-52"></div>
+          {/* <div className="absolute top-20 left-0 h-40 w-40 rounded-full bg-secondary mix-blend-multiply blur-[4.5rem] md:top-30 md:left-220 md:h-80 md:w-80 md:blur-none"></div>
+          <div className="absolute right-0 bottom-30 h-40 w-40 rounded-full bg-tertirary mix-blend-multiply blur-[5rem] md:bottom-30 md:left-180 md:blur-none md:h-0 md:w-0"></div> */}
           {/* blob end */}
 
-          <div className="flex items-center gap-2 rounded-full border border-gray-50 px-3 py-1 shadow-sm">
-            <div className="h-2 w-2 rounded-full bg-red-500 md:h-3 md:w-3"></div>
-            <p className="font-work-sans text-sm text-gray-600 capitalize md:text-base">
+          <div className="flex items-center gap-2 rounded-full border border-light px-3 py-1 shadow-sm">
+            <div className="h-2 w-2 rounded-full bg-red-500"></div>
+            <p className="font-work-sans text-sm text-dark-gray capitalize">
               komunitas belajar
             </p>
           </div>
-          <h1 className="px-3 text-[2.5rem] leading-12 font-extrabold text-gray-800 capitalize md:px-0 md:text-6xl md:leading-18">
+          <h1 className="px-3 text-[2.5rem] leading-12 font-extrabold text-foreground capitalize md:px-0 md:text-5xl md:leading-16">
             mencerdaskan bangsa{' '}
-            <span className="text-blue-600">melalui kolaborasi</span> guru
+            <span className="text-primary">melalui kolaborasi</span> guru
             kreatif
           </h1>
-          <p className="font-work-sans text-sm text-gray-500 md:text-xl">
+          <p className="font-work-sans text-sm text-foreground-muted md:text-base">
             Pusat pemberdayaan dan pengembangan profesionalisme guru SD di
             Kecamatan Tinanggea, Kabupaten Konawe Selatan.
           </p>
-          <div className="mt-4 rounded bg-blue-600 px-6 py-3 font-bold text-white capitalize transition-transform hover:px-8 md:text-xl">
+          <div className="mt-10 bg-primary px-6 py-3 font-bold text-neutral capitalize transition-transform hover:px-8">
             <a href="#">hubungi kami</a>
           </div>
         </div>
-        <div className="hidden w-1/3 pr-12 md:block">
-          <div className="flex h-full w-full">
+        <div className="hidden pr-12 md:block">
+          <div className="relative flex h-full w-full">
             <img
-              className="object-contain"
-              src="/brand/logo-kkg.png"
+              className="absolute scale-130 rotate-180 hue-rotate-300"
+              src="/blob.svg"
+              alt="background decor"
+            />
+            <img
+              className="relative z-0 object-contain"
+              src="/ilustration/undraw_team-collaboration_phnf.svg"
               alt="Logo KKG Kecamatan Tinanggea"
             />
           </div>
@@ -91,7 +96,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* brand section start */}
-      <div className="flex items-center-safe justify-center-safe gap-6 border border-gray-300 bg-gray-100 py-2 md:gap-10 md:py-4">
+      <div className="flex items-center-safe justify-center-safe gap-6 bg-light-gray py-2 md:gap-10 md:py-4">
         {brand.map((item) => (
           <img
             src={item.src}
@@ -109,15 +114,15 @@ export default function Home() {
       >
         <div className="md:w-1/2 md:space-y-6">
           <div className="capitalize">
-            <p className="text-xl font-bold text-blue-600 md:text-2xl">
+            <p className="text-lg font-bold text-primary md:text-2xl">
               tentang kami
             </p>
           </div>
-          <div className="space-y-4 md:space-y-8">
-            <h1 className="text-3xl leading-11 font-bold text-gray-800 capitalize md:text-5xl md:leading-16 md:font-extrabold">
-              membangun sinergi, meningkatkan kompetensi
+          <div className="space-y-4 md:space-y-12">
+            <h1 className="my-4 text-2xl font-bold text-foreground capitalize md:text-4xl md:leading-12 md:font-extrabold">
+              membangun sinergi, meningkatkan kompetensi.
             </h1>
-            <p className="text-justify font-work-sans text-lg leading-8 text-gray-500 md:text-xl md:leading-10">
+            <p className="text-justify font-work-sans text-sm leading-8 text-foreground-muted md:text-base">
               Komunitas Belajar adalah ruang kolaborasi progresif yang resmi
               didirikan pada tahun 2022. Komunitas ini hadir sebagai wadah
               interaktif bagi para pendidik untuk saling berbagi pengetahuan,
@@ -154,12 +159,12 @@ export default function Home() {
       </div>
 
       {/* documentation section start */}
-      <div className="space-y-8 bg-gray-100 py-14 md:space-y-12 md:py-20">
-        <div className="space-y-4 px-6 md:space-y-8">
-          <h1 className="text-center text-3xl font-bold text-gray-800 capitalize md:text-5xl">
+      <div className="space-y-8 bg-light-gray py-14 md:space-y-12 md:py-20">
+        <div className="space-y-4 px-6">
+          <h1 className="text-center text-2xl font-bold text-foreground capitalize md:text-3xl">
             kegiatan terkini
           </h1>
-          <p className="text-center font-work-sans text-lg text-gray-500 md:text-xl">
+          <p className="text-center font-work-sans text-sm text-foreground-muted md:text-base">
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
@@ -193,40 +198,40 @@ export default function Home() {
       {/* documentation section end */}
 
       {/* contact section start */}
-      <div className="px-6 py-14 md:px-12 md:py-20">
-        <div className="rounded-2xl bg-blue-600 px-6 py-8 md:flex md:px-12">
+      <div className="bg-neutral px-6 py-14 md:px-12 md:py-20">
+        <div className="bg-primary px-6 py-8 md:flex md:px-12">
           <div className="space-y-4 md:w-2/3 md:space-y-6">
-            <h1 className="text-4xl font-extrabold text-gray-100 capitalize md:text-6xl">
+            <h1 className="text-3xl font-extrabold text-neutral capitalize md:text-4xl">
               mari berkolaborasi
             </h1>
-            <p className="font-work-sans text-lg text-gray-200 first-letter:capitalize md:text-xl">
+            <p className="font-work-sans text-sm text-light-gray first-letter:capitalize md:text-base">
               punya pertanyaan seputar kegiatan gugus atau ingin berbagi ilmu
               dengan komunitas kami? kami sangat terbuka untuk berdiskusi.
             </p>
             <div className="gap-6 space-y-3 md:flex md:space-y-0">
               <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-blue-100/40 p-2">
-                  <EnvelopeIcon className="size-5 text-gray-100" />
+                <div className="rounded-lg bg-secondary/40 p-2">
+                  <EnvelopeIcon className="size-3 text-neutral" />
                 </div>
-                <p className="font-work-sans text-gray-100 md:text-lg">
+                <p className="font-work-sans text-sm text-neutral md:text-base">
                   kkg.gugus1.tinanggea@gmail.com
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-blue-100/40 p-2">
-                  <PhoneIcon className="size-5 text-gray-100" />
+                <div className="rounded-lg bg-secondary/40 p-2">
+                  <PhoneIcon className="size-3 text-neutral" />
                 </div>
-                <p className="font-work-sans text-gray-100 md:text-lg">
+                <p className="font-work-sans text-sm text-neutral md:text-base">
                   +62 812 4455 6677
                 </p>
               </div>
             </div>
           </div>
-          <div className="items-center-safe justify-center-safe md:flex md:w-1/3">
+          <div className="mt-4 items-center-safe justify-center-safe md:flex md:w-1/3">
             <div className="flex justify-center py-6">
               <a
                 href="#"
-                className="rounded-lg bg-gray-100 px-6 py-3 text-lg font-bold text-blue-600 capitalize md:px-12 md:py-6 md:text-2xl"
+                className="bg-neutral px-6 py-3 font-bold text-primary capitalize md:px-10 md:py-4 md:text-lg"
               >
                 hubungi kami
               </a>

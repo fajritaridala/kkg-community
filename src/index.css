@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 @import 'tailwindcss';
 
 @theme {
   --font-work-sans: 'Work Sans', sans-serif;
   --font-jakarta-plus: 'Plus Jakarta Sans', sans-serif;
+  --font-story-script: 'Story Script', cursive;
+
+  --color-primary: var(--color-blue-600);
+  --color-secondary: var(--color-blue-900);
+  --color-tertirary: var(--color-amber-300);
+  --color-dark: var(--color-gray-900);
+  --color-neutral: var(--color-amber-50);
+  --color-light: var(--color-slate-50);
+  --color-light-gray: var(--color-gray-100);
+  --color-gray: var(--color-gray-400);
+  --color-dark-gray: var(--color-gray-600);
+  --color-foreground: var(--color-gray-900);
+  --color-foreground-muted: var(--color-gray-500);
 }
 
 html {
