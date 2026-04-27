@@ -18,11 +18,11 @@ export default function DocuCard(props: PropTypes) {
           <h1 className="text-base font-bold text-primary capitalize">
             {category}
           </h1>
-          <p className="text-sm font-semibold text-foreground-muted capitalize italic">
+          <p className="text-sm text-foreground-muted capitalize italic">
             {year}
           </p>
         </div>
-        <h3 className="text-lg font-bold text-foreground capitalize">
+        <h3 className="text-lg leading-6 font-bold text-foreground capitalize">
           {title}
         </h3>
         <p className="font-work-sans text-sm text-foreground-muted first-letter:capitalize">

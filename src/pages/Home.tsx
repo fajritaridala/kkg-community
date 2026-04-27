@@ -52,20 +52,15 @@ export default function Home() {
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="mb-8 flex md:mb-18">
-        <div className="relative -z-10 flex flex-col items-center-safe justify-center-safe space-y-6 py-18 text-center md:items-start md:justify-start md:px-12 md:text-left">
-          {/* blob start */}
-          {/* <div className="absolute top-20 left-0 h-40 w-40 rounded-full bg-secondary mix-blend-multiply blur-[4.5rem] md:top-30 md:left-220 md:h-80 md:w-80 md:blur-none"></div>
-          <div className="absolute right-0 bottom-30 h-40 w-40 rounded-full bg-tertirary mix-blend-multiply blur-[5rem] md:bottom-30 md:left-180 md:blur-none md:h-0 md:w-0"></div> */}
-          {/* blob end */}
-
+      <div className="flex h-[95vh] md:mb-18">
+        <div className="flex flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full border border-light px-3 py-1 shadow-sm">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
             <p className="font-work-sans text-sm text-dark-gray capitalize">
               komunitas belajar
             </p>
           </div>
-          <h1 className="px-3 text-[2.5rem] leading-12 font-extrabold text-foreground capitalize md:px-0 md:text-5xl md:leading-16">
+          <h1 className="px-3 text-4xl leading-12 font-extrabold text-foreground capitalize md:px-0 md:text-5xl md:leading-16">
             mencerdaskan bangsa{' '}
             <span className="text-primary">melalui kolaborasi</span> guru
             kreatif
@@ -74,7 +69,7 @@ export default function Home() {
             Pusat pemberdayaan dan pengembangan profesionalisme guru SD di
             Kecamatan Tinanggea, Kabupaten Konawe Selatan.
           </p>
-          <div className="mt-10 bg-primary px-6 py-3 font-bold text-neutral capitalize transition-transform hover:px-8">
+          <div className="my-10 bg-primary px-6 py-3 font-bold text-neutral capitalize transition-transform hover:px-8">
             <a href="#">hubungi kami</a>
           </div>
         </div>
