@@ -76,7 +76,7 @@ export default function Home() {
         <div className="hidden pr-12 md:block">
           <div className="relative flex h-full w-full">
             <img
-              className="absolute scale-130 rotate-180 hue-rotate-300"
+              className="absolute -top-20 scale-130 rotate-180 hue-rotate-300"
               src="/blob.svg"
               alt="background decor"
             />
