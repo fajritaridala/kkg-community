@@ -52,8 +52,8 @@ export default function Home() {
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="flex h-[95vh] md:mb-18">
-        <div className="flex flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
+      <div className="flex h-[92vh] items-center md:mb-18">
+        <div className="flex h-4/5 flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full border border-light px-3 py-1 shadow-sm">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
             <p className="font-work-sans text-sm text-dark-gray capitalize">
