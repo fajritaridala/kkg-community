@@ -1,10 +1,9 @@
 import {
   AcademicCapIcon,
   Cog6ToothIcon,
-  EyeIcon,
   LightBulbIcon,
   UserGroupIcon,
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/solid'
 import VisionCard from '../components/Card/Vision'
 import MissionCard from '../components/Card/Mission'
 import DocuCard from '../components/Card/Docu'
@@ -56,20 +55,20 @@ export default function Home() {
         <div className="flex h-4/5 flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full border border-light px-3 py-1 shadow-sm">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
-            <p className="font-work-sans text-sm text-dark-gray capitalize">
+            <p className="font-work-sans text-sm tracking-tight text-dark-gray capitalize">
               komunitas belajar
             </p>
           </div>
-          <h1 className="px-3 text-4xl leading-12 font-extrabold text-foreground capitalize md:px-0 md:text-5xl md:leading-16">
+          <h1 className="px-3 text-4xl leading-tight font-extrabold tracking-tight text-foreground capitalize md:px-0 md:text-5xl">
             mencerdaskan bangsa{' '}
             <span className="text-primary">melalui kolaborasi</span> guru
             kreatif
           </h1>
-          <p className="font-work-sans text-sm text-foreground-muted md:text-base">
-            Pusat pemberdayaan dan pengembangan profesionalisme guru SD di
+          <p className="font-work-sans text-sm leading-relaxed text-foreground-muted capitalize md:text-base">
+            pusat pemberdayaan dan pengembangan profesionalisme guru SD di
             Kecamatan Tinanggea, Kabupaten Konawe Selatan.
           </p>
-          <div className="my-10 bg-primary px-6 py-3 font-bold text-neutral capitalize transition-transform hover:px-8">
+          <div className="my-10 bg-primary px-6 py-3 font-bold tracking-tight text-neutral capitalize transition-transform hover:px-8">
             <a href="#">hubungi kami</a>
           </div>
         </div>
@@ -103,44 +102,34 @@ export default function Home() {
       {/* brand section end */}
 
       {/* profile section start */}
-      <div
-        id="profile"
-        className="flex-row space-y-6 px-6 py-14 md:flex md:gap-10 md:px-12 md:py-16"
-      >
-        <div className="md:w-1/2 md:space-y-6">
+      <div className="flex-row items-start space-y-6 px-6 py-14 md:flex md:gap-10 md:space-y-0 md:px-10">
+        <div className="space-y-4 md:w-1/2 md:space-y-8">
           <div className="capitalize">
-            <p className="text-lg font-bold text-primary md:text-2xl">
+            <p className="text-lg font-bold tracking-tight text-primary md:text-2xl">
               tentang kami
             </p>
           </div>
-          <div className="space-y-4 md:space-y-12">
-            <h1 className="my-4 text-2xl font-bold text-foreground capitalize md:text-4xl md:leading-12 md:font-extrabold">
-              membangun sinergi, meningkatkan kompetensi.
-            </h1>
-            <p className="text-justify font-work-sans text-sm leading-8 text-foreground-muted md:text-base">
-              Komunitas Belajar adalah ruang kolaborasi progresif yang resmi
-              didirikan pada tahun 2022. Komunitas ini hadir sebagai wadah
-              interaktif bagi para pendidik untuk saling berbagi pengetahuan,
-              mengembangkan keterampilan, dan tumbuh bersama. Sejak awal
-              berdirinya, komunitas ini berkomitmen kuat untuk menciptakan
-              ekosistem pembelajaran yang inklusif, inovatif, dan relevan dengan
-              perkembangan zaman guna mencetak individu-individu yang berdaya
-              saing tinggi.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid-cols-2 space-y-8 md:grid md:w-1/2 md:gap-8 md:space-y-0">
+          <h1 className="text-2xl leading-tight font-bold tracking-tight text-foreground capitalize md:text-4xl md:font-extrabold">
+            membangun sinergi, meningkatkan kompetensi.
+          </h1>
+          <p className="text-justify font-work-sans text-sm leading-relaxed text-foreground-muted md:text-base">
+            Komunitas Belajar adalah ruang kolaborasi progresif yang resmi
+            didirikan pada tahun 2022. Komunitas ini hadir sebagai wadah
+            interaktif bagi para pendidik untuk saling berbagi pengetahuan,
+            mengembangkan keterampilan, dan tumbuh bersama. Sejak awal
+            berdirinya, komunitas ini berkomitmen kuat untuk menciptakan
+            ekosistem pembelajaran yang inklusif, inovatif, dan relevan dengan
+            perkembangan zaman guna mencetak individu-individu yang berdaya
+            saing tinggi.
+          </p>
           {/* vision section start */}
-          <div className="col-span-2">
-            <VisionCard
-              icon={<EyeIcon />}
-              title="visi"
-              description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid."
-            />
+          <div className="py-4 md:py-0">
+            <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid." />
           </div>
           {/* vision section end */}
+        </div>
 
+        <div className="my-auto grid-cols-2 space-y-6 md:grid md:w-1/2 md:gap-6 md:space-y-0">
           {/* mission section start */}
           {missionContent.map((item, index) => (
             <MissionCard
@@ -156,14 +145,14 @@ export default function Home() {
       {/* documentation section start */}
       <div className="space-y-8 bg-light-gray py-14 md:space-y-12 md:py-20">
         <div className="space-y-4 px-6">
-          <h1 className="text-center text-2xl font-bold text-foreground capitalize md:text-3xl">
+          <h1 className="text-center text-2xl font-bold tracking-tight text-foreground capitalize md:text-3xl">
             kegiatan terkini
           </h1>
-          <p className="text-center font-work-sans text-sm text-foreground-muted md:text-base">
+          <p className="text-center font-work-sans text-sm leading-relaxed text-foreground-muted first-letter:capitalize md:text-base">
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
-        <div className="grid-cols-3 space-y-8 px-6 md:grid md:gap-8 md:px-12">
+        <div className="grid-cols-3 space-y-8 px-6 md:grid md:gap-8 md:space-y-0 md:px-12">
           <DocuCard
             img="/documentation/elyssa-dedios-oP9ePzLBX3s-unsplash.jpg"
             alt="Dokumentasi keramayan"
@@ -193,13 +182,13 @@ export default function Home() {
       {/* documentation section end */}
 
       {/* contact section start */}
-      <div className="bg-neutral px-6 py-14 md:px-12 md:py-20">
+      <div className="px-6 py-14 md:px-12 md:py-20">
         <div className="bg-primary px-6 py-8 md:flex md:px-12">
           <div className="space-y-4 md:w-2/3 md:space-y-6">
-            <h1 className="text-3xl font-extrabold text-neutral capitalize md:text-4xl">
+            <h1 className="text-3xl font-extrabold tracking-tight text-neutral capitalize md:text-4xl">
               mari berkolaborasi
             </h1>
-            <p className="font-work-sans text-sm text-light-gray first-letter:capitalize md:text-base">
+            <p className="font-work-sans text-sm leading-relaxed text-light-gray first-letter:capitalize md:text-base">
               punya pertanyaan seputar kegiatan gugus atau ingin berbagi ilmu
               dengan komunitas kami? kami sangat terbuka untuk berdiskusi.
             </p>
@@ -226,7 +215,7 @@ export default function Home() {
             <div className="flex justify-center py-6">
               <a
                 href="#"
-                className="bg-neutral px-6 py-3 font-bold text-primary capitalize md:px-10 md:py-4 md:text-lg"
+                className="bg-neutral px-6 py-3 font-bold tracking-tight text-primary capitalize md:px-10 md:py-4 md:text-lg"
               >
                 hubungi kami
               </a>

@@ -59,7 +59,7 @@ export default function Navbar() {
           <NavHashLink
             title={item.name}
             to={item.to}
-            className="border-y border-transparent px-6 py-3 text-foreground duration-200 active:border-y active:border-light-gray active:bg-gray md:my-auto md:px-0 md:py-0"
+            className="border-y border-transparent px-6 py-3 tracking-tight text-foreground duration-200 active:border-y active:border-light-gray active:bg-gray md:my-auto md:px-0 md:py-0"
           >
             {item.name}
           </NavHashLink>

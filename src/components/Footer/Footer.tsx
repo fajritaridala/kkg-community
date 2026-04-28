@@ -10,19 +10,19 @@ export default function Footer() {
             src="/brand/logo-kkg.png"
             alt="Logo KKG"
           />
-          <h2 className="text-base font-semibold text-light md:text-lg">
+          <h2 className="text-base font-bold tracking-tight text-light md:text-lg">
             KKG Gugus 1 R. A. Kartini
           </h2>
         </div>
-        <p className="text-center font-work-sans text-sm text-light capitalize md:w-sm md:text-left md:text-base">
+        <p className="text-center font-work-sans text-sm leading-relaxed text-light first-letter:capitalize md:w-sm md:text-left md:text-base">
           meningkatkan kualitas pendidikan dasar di kecamatan tinanggea,
           sulawesi tenggara
         </p>
-        <p className="text-center font-work-sans text-sm text-gray md:text-left">
+        <p className="text-center font-work-sans text-sm leading-relaxed tracking-tight text-gray md:text-left">
           &copy; 2026 KKG Gugus 1 R. A. Kartini. All rights reserved.
         </p>
       </div>
-      <div className="flex items-center gap-2 px-6 text-sm text-light-gray capitalize md:gap-10 md:pr-12">
+      <div className="flex items-center gap-2 px-6 text-sm tracking-tight text-light-gray capitalize md:gap-10 md:pr-12">
         <Link to="/#">kebijakan privasi</Link>
         <Link to="/#">syarat dan ketentuan</Link>
         <Link to="/#">peta situs</Link>

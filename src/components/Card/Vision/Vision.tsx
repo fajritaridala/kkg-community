@@ -1,21 +1,13 @@
-import type { ReactNode } from 'react'
-
 type PropTypes = {
-  icon: ReactNode
-  title: string
   description: string
 }
 
 export default function VisionCard(props: PropTypes) {
-  const { icon, title, description } = props
+  const { description } = props
 
   return (
-    <div className="flex flex-col space-y-2 bg-light px-4 py-10">
-      <div className="flex h-10 items-center-safe gap-3 px-6 text-primary">
-        <div className="size-6">{icon}</div>
-        <h1 className="text-lg font-bold capitalize">{title}</h1>
-      </div>
-      <p className="px-6 font-work-sans text-sm text-foreground-muted capitalize italic">
+    <div className="flex flex-col space-y-2 bg-primary p-3 shadow-lg md:px-6 md:py-4">
+      <p className="text-center font-work-sans text-sm leading-relaxed font-semibold text-light italic first-letter:capitalize">
         "{description}"
       </p>
     </div>

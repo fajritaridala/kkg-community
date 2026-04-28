@@ -15,7 +15,7 @@
   --color-neutral: var(--color-amber-50);
   --color-light: var(--color-slate-50);
   --color-light-gray: var(--color-gray-100);
-  --color-gray: var(--color-gray-400);
+  --color-gray: var(--color-gray-300);
   --color-dark-gray: var(--color-gray-600);
   --color-foreground: var(--color-gray-900);
   --color-foreground-muted: var(--color-gray-500);
