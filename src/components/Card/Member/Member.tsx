@@ -10,9 +10,9 @@ export default function MemberCard(props: PropTypes) {
 
   return (
     <div className="w-full shadow-md">
-      <div className="aspect-square w-full overflow-hidden">
+      <div className="group aspect-square w-full overflow-hidden bg-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-800">
         <img
-          className="h-full w-full object-cover object-top grayscale-75 transition-colors duration-300 ease-in-out hover:grayscale-0"
+          className="h-full w-full object-cover grayscale-75 transition-colors duration-300 ease-in-out group-hover:grayscale-0"
           src={src}
           alt={alt}
         />

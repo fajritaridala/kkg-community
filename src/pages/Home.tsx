@@ -68,9 +68,12 @@ export default function Home() {
             pusat pemberdayaan dan pengembangan profesionalisme guru SD di
             Kecamatan Tinanggea, Kabupaten Konawe Selatan.
           </p>
-          <div className="my-10 bg-primary px-6 py-3 font-bold tracking-tight text-neutral capitalize transition-transform hover:px-8">
-            <a href="#">hubungi kami</a>
-          </div>
+          <a
+            href="#"
+            className="my-10 bg-primary px-6 py-3 font-bold tracking-tight text-neutral capitalize"
+          >
+            hubungi kami
+          </a>
         </div>
         <div className="hidden pr-12 md:block">
           <div className="relative flex h-full w-full">
@@ -201,14 +204,19 @@ export default function Home() {
                   kkg.gugus1.tinanggea@gmail.com
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <a
+                href="https://wa.me/6285242521571"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
                 <div className="rounded-lg bg-secondary/40 p-2">
                   <PhoneIcon className="size-3 text-neutral" />
                 </div>
                 <p className="font-work-sans text-sm text-neutral md:text-base">
-                  +62 812 4455 6677
+                  +62 852 4252 1571
                 </p>
-              </div>
+              </a>
             </div>
           </div>
           <div className="mt-4 items-center-safe justify-center-safe md:flex md:w-1/3">

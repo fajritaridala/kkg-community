@@ -25,23 +25,23 @@ export default function Membership() {
       </div>
       {/* hero section end */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-18">
+      <div className="grid grid-cols-1 gap-6 px-6 md:grid-cols-3 md:px-18">
         <MemberCard
-          src="/membership/person.jpg"
-          alt="John Doe"
-          name="John Doe"
+          src="/public/membership/ketua.png"
+          alt="Hj. Nurhatma, S.Pd"
+          name="Hj. Nurhatma, S.Pd"
           position="ketua"
         />
         <MemberCard
-          src="/membership/person.jpg"
-          alt="John Doe"
-          name="John Doe"
+          src="/membership/sekretaris.png"
+          alt="Putu Suriyanto, S.Pd"
+          name="Putu Suriyanto, S.Pd"
           position="sekretaris"
         />
         <MemberCard
-          src="/membership/person.jpg"
-          alt="John Doe"
-          name="John Doe"
+          src="/membership/bendahara.png"
+          alt="Ani Indraningsi, S.Pd"
+          name="Ani Indraningsi, S.Pd"
           position="bendahara"
         />
       </div>
