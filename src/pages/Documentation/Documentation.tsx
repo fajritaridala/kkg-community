@@ -9,7 +9,7 @@ export default function Documentation() {
           <h1 className="text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-4xl">
             dokumentasi
           </h1>
-          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:mx-auto md:w-xl md:pt-3 md:text-sm">
+          <p className="font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize md:mx-auto md:w-xl md:pt-3 md:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
             corporis harum. Neque sunt minus numquam similique qui, rerum magnam
             iusto eligendi nesciunt fugiat!

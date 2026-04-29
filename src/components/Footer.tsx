@@ -17,12 +17,12 @@ export default function Footer() {
                 KKG Gugus 1 R. A. Kartini
               </h2>
             </div>
-            <p className="text-center font-work-sans text-sm leading-relaxed text-foreground-muted first-letter:capitalize md:w-sm md:text-left md:text-base">
+            <p className="text-center font-work-sans text-xs leading-relaxed text-foreground-muted first-letter:capitalize md:w-sm md:text-left md:text-sm">
               meningkatkan kualitas pendidikan dasar di kecamatan tinanggea,
               sulawesi tenggara
             </p>
           </div>
-          <div className="flex flex-col text-sm leading-relaxed font-semibold text-foreground-muted capitalize md:flex-row md:items-end-safe md:gap-12">
+          <div className="flex flex-col text-xs md:text-sm leading-relaxed font-semibold text-foreground-muted capitalize md:flex-row md:items-end-safe md:gap-12">
             <Link
               to="/#"
               className="flex items-center-safe justify-between hover:underline"
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full px-6 md:px-12">
-          <p className="border-t pt-6 text-center text-xsm text-foreground">
+          <p className="border-t pt-6 text-center text-2xs text-foreground">
             &copy; 2026 KKG Gugus 1 R. A. Kartini. All rights reserved.
           </p>
         </div>

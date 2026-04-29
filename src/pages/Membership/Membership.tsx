@@ -9,7 +9,7 @@ export default function Membership() {
           <h1 className="text-center text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-left md:text-5xl">
             keanggotaan
           </h1>
-          <p className="hidden w-lg text-base leading-relaxed text-foreground first-letter:capitalize md:block">
+          <p className="hidden w-lg text-sm leading-relaxed text-foreground first-letter:capitalize md:block">
             kepengurusan Kelompok Kerja Guru gugus 1 R. A. Kartini berdedikasi
             untuk memajukan pendidikan dan profesionalisme pendidik melalui
             kolaborasi yang terstuktur.

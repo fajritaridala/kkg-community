@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex h-4/5 flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full border-t border-light px-3 py-1 shadow-sm">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
-            <p className="font-work-sans text-sm tracking-tight text-foreground capitalize">
+            <p className="font-work-sans text-xs tracking-tight text-foreground capitalize">
               komunitas belajar
             </p>
           </div>
@@ -19,13 +19,13 @@ export default function Home() {
             <span className="text-primary">melalui kolaborasi</span> guru
             kreatif
           </h1>
-          <p className="px-6 font-work-sans text-sm leading-relaxed text-foreground capitalize md:px-0 md:text-base">
+          <p className="px-6 font-work-sans text-xs leading-relaxed text-foreground capitalize md:px-0 md:text-sm">
             pusat pemberdayaan dan pengembangan profesionalisme guru SD di
             Kecamatan Tinanggea, Kabupaten Konawe Selatan.
           </p>
           <a
             href="#"
-            className="my-10 rounded-lg bg-primary px-6 py-3 font-bold tracking-tight text-neutral capitalize"
+            className="my-10 rounded-lg bg-primary px-6 py-3 text-sm font-bold tracking-tight text-neutral capitalize md:text-base"
           >
             hubungi kami
           </a>
@@ -53,24 +53,22 @@ export default function Home() {
           <img
             src={item.src}
             alt={item.name}
-            className="h-12 w-auto object-cover grayscale transition duration-300 hover:grayscale-0 md:h-20"
+            className="size-8 w-auto object-cover grayscale transition duration-300 hover:grayscale-0 md:h-14"
           />
         ))}
       </div>
       {/* brand section end */}
 
       {/* profile section start */}
-      <div className="flex-row items-start space-y-6 px-6 py-14 md:flex md:gap-10 md:space-y-0 md:px-10">
-        <div className="space-y-4 md:w-1/2 md:space-y-8">
-          <div className="capitalize">
-            <p className="text-lg font-bold tracking-tight text-primary md:text-2xl">
-              tentang kami
-            </p>
-          </div>
-          <h1 className="text-2xl leading-tight font-bold tracking-tight text-foreground-dark capitalize md:text-4xl md:font-extrabold">
+      <div className="flex-row items-start space-y-4 px-6 py-8 md:flex md:gap-10 md:space-y-0 md:px-10">
+        <div className="space-y-2 md:w-1/2 md:space-y-3">
+          <p className="font-bold tracking-tight text-primary capitalize md:text-lg">
+            tentang kami
+          </p>
+          <h1 className="text-lg leading-tight font-bold tracking-tight text-foreground-dark capitalize md:text-4xl md:font-extrabold">
             membangun sinergi, meningkatkan kompetensi.
           </h1>
-          <p className="text-justify font-work-sans text-sm leading-relaxed text-foreground md:text-base">
+          <p className="text-justify font-work-sans text-xs leading-relaxed text-foreground md:text-sm">
             Komunitas Belajar adalah ruang kolaborasi progresif yang resmi
             didirikan pada tahun 2022. Komunitas ini hadir sebagai wadah
             interaktif bagi para pendidik untuk saling berbagi pengetahuan,
@@ -81,13 +79,13 @@ export default function Home() {
             saing tinggi.
           </p>
           {/* vision section start */}
-          <div className="py-4 md:py-0">
+          <div className="py-3 md:py-0">
             <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid." />
           </div>
           {/* vision section end */}
         </div>
 
-        <div className="my-auto grid-cols-2 space-y-6 md:grid md:w-1/2 md:gap-6 md:space-y-0">
+        <div className="my-auto grid-cols-2 space-y-4 md:grid md:w-1/2 md:gap-4 md:space-y-0">
           {/* mission section start */}
           {missions.map((item, index) => (
             <MissionCard
@@ -101,16 +99,16 @@ export default function Home() {
       </div>
 
       {/* documentation section start */}
-      <div className="space-y-8 bg-light-gray py-14 md:space-y-12 md:py-20">
-        <div className="space-y-4 px-6">
-          <h1 className="text-center text-2xl font-bold tracking-tight text-foreground-dark capitalize md:text-3xl">
+      <div className="space-y-8 bg-light-gray py-8 md:space-y-12 md:py-12">
+        <div className="space-y-1 px-6 md:space-y-2">
+          <h1 className="text-center text-xl font-bold tracking-tight text-foreground-dark capitalize md:text-2xl">
             kegiatan terkini
           </h1>
-          <p className="text-center font-work-sans text-sm leading-relaxed text-foreground first-letter:capitalize md:text-base">
+          <p className="text-center font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize md:text-sm">
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
-        <div className="grid-cols-3 space-y-8 px-6 md:grid md:gap-8 md:space-y-0 md:px-12">
+        <div className="grid-cols-3 gap-4 space-y-4 px-6 md:grid md:space-y-0 md:px-12">
           {latestDocumentations.map((item, index) => (
             <DocuCard
               key={index}
@@ -133,7 +131,7 @@ export default function Home() {
             <h1 className="text-3xl font-extrabold tracking-tight text-neutral capitalize md:text-4xl">
               mari berkolaborasi
             </h1>
-            <p className="font-work-sans text-sm leading-relaxed text-foreground-light first-letter:capitalize md:text-base">
+            <p className="font-work-sans text-xs leading-relaxed text-foreground-light first-letter:capitalize md:text-sm">
               punya pertanyaan seputar kegiatan gugus atau ingin berbagi ilmu
               dengan komunitas kami? kami sangat terbuka untuk berdiskusi.
             </p>
@@ -142,7 +140,7 @@ export default function Home() {
                 <div className="rounded-lg bg-neutral/20 p-1">
                   <EnvelopeIcon className="size-4 text-neutral" />
                 </div>
-                <p className="font-work-sans text-sm text-neutral md:text-base">
+                <p className="font-work-sans text-xs text-neutral md:text-sm">
                   kkg.gugus1.tinanggea@gmail.com
                 </p>
               </div>
@@ -150,12 +148,12 @@ export default function Home() {
                 href="https://wa.me/6285242521571"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex  items-center gap-3"
+                className="flex items-center gap-3"
               >
                 <div className="rounded-lg bg-neutral/20 p-1">
                   <PhoneIcon className="size-4 text-neutral" />
                 </div>
-                <p className="font-work-sans text-sm text-neutral md:text-base">
+                <p className="font-work-sans text-xs text-neutral md:text-sm">
                   +62 852 4252 1571
                 </p>
               </a>
@@ -167,7 +165,7 @@ export default function Home() {
                 href="https://wa.me/6285242521571"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg bg-neutral px-6 py-3 font-bold tracking-tight text-primary capitalize md:px-10 md:py-4 md:text-lg"
+                className="tracking- rounded-lg bg-neutral px-6 py-3 text-sm font-bold text-primary capitalize md:px-10 md:py-4 md:text-base"
               >
                 hubungi kami
               </a>

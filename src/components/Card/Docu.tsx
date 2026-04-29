@@ -12,26 +12,24 @@ export default function DocuCard(props: PropTypes) {
 
   return (
     <div className="rounded-xl bg-light shadow-sm">
-      <div className="h-44 w-full overflow-hidden md:h-56">
+      <div className="aspect-video w-full overflow-hidden">
         <img
           src={src}
           alt={alt}
           className="h-full w-full rounded-t-xl object-cover object-center"
         />
       </div>
-      <div className="space-y-3 p-4">
+      <div className="space-y-1 p-4 md:pt-2">
         <div className="flex justify-between">
-          <h1 className="text-base font-bold tracking-tight text-primary capitalize">
+          <h2 className="text-sm font-semibold tracking-tight text-primary capitalize">
             {category}
-          </h1>
-          <p className="text-sm tracking-tight text-foreground capitalize italic">
-            {year}
-          </p>
+          </h2>
+          <p className="text-2xs text-foreground capitalize italic">{year}</p>
         </div>
-        <h3 className="text-lg leading-tight font-bold tracking-tight text-foreground-dark capitalize">
+        <h3 className="leading-tight font-semibold tracking-tight text-foreground-dark capitalize">
           {title}
         </h3>
-        <p className="font-work-sans text-sm leading-relaxed text-foreground first-letter:capitalize">
+        <p className="font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize">
           {description}
         </p>
       </div>
