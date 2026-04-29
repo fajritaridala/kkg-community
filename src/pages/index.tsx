@@ -1,3 +1,5 @@
-import Home from './Home';
+import Home from './Home'
+import Documentation from './Documentation'
+import Membership from './Membership'
 
-export default Home;
+export { Home, Documentation, Membership }

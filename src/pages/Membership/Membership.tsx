@@ -1,4 +1,4 @@
-import MemberCard from '../../components/Card/Member'
+import { MemberCard } from '../../components'
 
 export default function Membership() {
   return (
@@ -27,7 +27,7 @@ export default function Membership() {
 
       <div className="grid grid-cols-1 gap-6 px-6 md:grid-cols-3 md:px-18">
         <MemberCard
-          src="/public/membership/ketua.png"
+          src="/membership/ketua.png"
           alt="Hj. Nurhatma, S.Pd"
           name="Hj. Nurhatma, S.Pd"
           position="ketua"

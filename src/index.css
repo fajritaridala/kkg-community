@@ -4,10 +4,13 @@
 @import 'tailwindcss';
 
 @theme {
+  /* texts * fonts */
   --font-work-sans: 'Work Sans', sans-serif;
   --font-jakarta-plus: 'Plus Jakarta Sans', sans-serif;
   --font-story-script: 'Story Script', cursive;
+  --text-xsm: 12px;
 
+  /* colors */
   --color-primary: var(--color-blue-600);
   --color-secondary: var(--color-blue-900);
   --color-tertirary: var(--color-amber-300);
@@ -18,7 +21,8 @@
   --color-gray: var(--color-gray-300);
   --color-dark-gray: var(--color-gray-600);
   --color-foreground: var(--color-gray-900);
-  --color-foreground-muted: var(--color-gray-500);
+  --color-foreground-muted: var(--color-gray-400);
+  --color-foreground-light: var(--color-gray-600);
 }
 
 html {

@@ -4,10 +4,8 @@ import {
   LightBulbIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/solid'
-import VisionCard from '../components/Card/Vision'
-import MissionCard from '../components/Card/Mission'
-import DocuCard from '../components/Card/Docu'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { DocuCard, MissionCard, VisionCard } from '../components'
 
 export default function Home() {
   const brand = [
@@ -222,7 +220,9 @@ export default function Home() {
           <div className="mt-4 items-center-safe justify-center-safe md:flex md:w-1/3">
             <div className="flex justify-center py-6">
               <a
-                href="#"
+                href="https://wa.me/6285242521571"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-neutral px-6 py-3 font-bold tracking-tight text-primary capitalize md:px-10 md:py-4 md:text-lg"
               >
                 hubungi kami
