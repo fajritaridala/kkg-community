@@ -53,7 +53,7 @@ export default function Navbar() {
       </div>
       {/* mobile menu start */}
       <div
-        className={`fixed top-0 left-0 z-0 flex h-1/2 w-full flex-col space-y-4 bg-transparent py-6 text-lg font-semibold capitalize backdrop-blur-3xl transition-all duration-300 ease-in-out md:top-0 md:z-50 md:mt-0 md:flex md:h-14 md:flex-row md:justify-end md:gap-8 md:bg-transparent md:px-10 md:py-0 md:text-sm md:font-medium md:backdrop-blur-none ${isOpen ? 'translate-y-0 pt-16 opacity-100' : '-translate-y-full opacity-0 md:translate-y-0'}`}
+        className={`fixed top-0 left-0 z-0 flex h-1/2 w-full flex-col space-y-4 bg-transparent py-6 text-lg font-semibold capitalize backdrop-blur-3xl transition-all duration-300 ease-in-out md:top-0 md:z-50 md:mt-0 md:flex md:h-14 md:flex-row md:justify-end md:gap-8 md:bg-transparent md:px-10 md:py-0 md:text-sm md:font-medium md:backdrop-blur-none ${isOpen ? 'translate-y-0 pt-16' : '-translate-y-full md:translate-y-0'}`}
       >
         {textMenu.map((item) => (
           <NavHashLink

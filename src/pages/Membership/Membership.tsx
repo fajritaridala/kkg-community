@@ -6,10 +6,10 @@ export default function Membership() {
       {/* hero section start */}
       <div className="my-22 flex w-full items-center-safe md:px-14">
         <div className="w-full space-y-4 md:w-1/2">
-          <h1 className="text-center text-3xl font-bold tracking-tight capitalize text-shadow-foreground md:text-left md:text-5xl">
+          <h1 className="text-center text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-left md:text-5xl">
             keanggotaan
           </h1>
-          <p className="hidden w-lg text-base leading-relaxed text-foreground-muted first-letter:capitalize md:block">
+          <p className="hidden w-lg text-base leading-relaxed text-foreground first-letter:capitalize md:block">
             kepengurusan Kelompok Kerja Guru gugus 1 R. A. Kartini berdedikasi
             untuk memajukan pendidikan dan profesionalisme pendidik melalui
             kolaborasi yang terstuktur.
