@@ -18,10 +18,10 @@ export default function MemberCard(props: PropTypes) {
         />
       </div>
       <div className="my-6 space-y-2 text-center">
-        <h2 className="text-lg font-bold tracking-tight text-foreground capitalize">
+        <h2 className="text-lg font-bold tracking-tight text-foreground-dark capitalize">
           {name}
         </h2>
-        <p className="text-sm tracking-wider text-foreground-muted uppercase">
+        <p className="text-sm tracking-wider text-foreground uppercase">
           {position}
         </p>
       </div>

@@ -5,7 +5,7 @@ export default function Documentation() {
     <section className="pb-14">
       {/* hero section start */}
       <div className="relative flex flex-col">
-        <div className="space-y-3 bg-light/60 px-6 pt-26 pb-6 text-center backdrop-blur-2xl">
+        <div className="relative z-10 space-y-3 bg-light/60 px-6 pt-26 pb-6 text-center backdrop-blur-2xl">
           <h1 className="text-3xl font-bold tracking-tight text-primary capitalize">
             dokumentasi
           </h1>
@@ -24,7 +24,7 @@ export default function Documentation() {
           </div>
           {/* filter section end */}
         </div>
-        <div className="absolute -z-10 flex h-full w-full items-center justify-center">
+        <div className="absolute z-0 flex h-full w-full items-center justify-center">
           <img
             className="size-64"
             src="/public/ilustration/moments.svg"

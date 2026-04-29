@@ -9,10 +9,10 @@ export default function GalleryCard() {
         />
       </div>
       <div className="space-y-2 px-4 py-2">
-        <h2 className="text-lg text-foreground font-bold tracking-tight capitalize">
+        <h2 className="text-lg font-bold tracking-tight text-foreground-dark capitalize">
           Lorem ipsum dolor sit.
         </h2>
-        <p className="text-sm leading-relaxed text-foreground-light first-letter:capitalize">
+        <p className="text-sm leading-relaxed text-foreground first-letter:capitalize">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           temporibus libero reiciendis?
         </p>
