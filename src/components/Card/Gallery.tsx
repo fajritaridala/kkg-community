@@ -1,24 +1,25 @@
 export default function GalleryCard() {
   return (
-    <div className="rounded-2xl pb-6 shadow-sm">
-      <div className="aspect-video overflow-hidden p-2">
+    <div className="mb-4 inline-block w-full break-inside-avoid rounded-xl pb-3 shadow-sm">
+      <div className="aspect-video overflow-hidden p-1 md:p-2">
         <img
-          src="/public/documentation/les-taylor-3JXByKQVsYI-unsplash.jpg"
+          src="/documentation/les-taylor-3JXByKQVsYI-unsplash.jpg"
           alt="foto"
-          className="h-full w-full rounded-xl object-cover object-center"
+          className="h-full w-full rounded-lg object-cover object-center"
         />
       </div>
-      <div className="space-y-2 px-4 py-2">
-        <h2 className="text-lg font-bold tracking-tight text-foreground-dark capitalize">
-          Lorem ipsum dolor sit.
+      <div className="space-y-1 px-3 md:px-4">
+        <h2 className="leading-tight font-semibold tracking-tight text-foreground-dark capitalize md:text-lg">
+          Lorem ipsum dolor sit amet
         </h2>
-        <p className="text-sm leading-relaxed text-foreground first-letter:capitalize">
+        <h3 className="text-2xs font-semibold tracking-wide text-foreground md:text-xs">
+          23 April 2026
+        </h3>
+
+        <p className="text-xs leading-relaxed text-foreground first-letter:capitalize">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           temporibus libero reiciendis?
         </p>
-        <h3 className="text-end text-xsm text-foreground-muted">
-          23 April 2026
-        </h3>
       </div>
     </div>
   )

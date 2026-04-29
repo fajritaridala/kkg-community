@@ -8,7 +8,9 @@
   --font-work-sans: 'Work Sans', sans-serif;
   --font-jakarta-plus: 'Plus Jakarta Sans', sans-serif;
   --font-story-script: 'Story Script', cursive;
-  --text-xsm: 12px;
+  --text-xs: 12px;
+  --text-2xs: 10px;
+  --text-3xs: 8px;
 
   /* colors */
   --color-primary: var(--color-blue-600);

@@ -2,23 +2,24 @@ import { GalleryCard } from '../../components'
 
 export default function Documentation() {
   return (
-    <section className="pb-14">
+    <section className="pb-6">
       {/* hero section start */}
-      <div className="relative flex flex-col">
-        <div className="relative z-10 space-y-3 bg-light/60 px-6 pt-26 pb-6 text-center backdrop-blur-2xl">
-          <h1 className="text-3xl font-bold tracking-tight text-primary capitalize">
+      <div className="relative flex flex-col border-b border-gray">
+        <div className="relative z-10 space-y-3 bg-light/60 px-6 pt-26 pb-6 text-center backdrop-blur-2xl md:pt-44 md:pb-8">
+          <h1 className="text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-4xl">
             dokumentasi
           </h1>
-          <p className="text-sm leading-relaxed text-secondary first-letter:capitalize">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            repudiandae modi sapiente.
+          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:mx-auto md:w-xl md:pt-3 md:text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+            corporis harum. Neque sunt minus numquam similique qui, rerum magnam
+            iusto eligendi nesciunt fugiat!
           </p>
           {/* filter section start */}
-          <div className="mt-12 flex w-full justify-center-safe gap-4">
-            <button className="rounded-full border border-primary bg-primary px-8 py-1 font-semibold text-light capitalize">
+          <div className="mt-8 flex w-full justify-center-safe gap-4 md:mt-12">
+            <button className="rounded-full border border-dark bg-dark px-6 py-1 text-sm font-semibold text-light capitalize">
               foto
             </button>
-            <button className="rounded-full border border-primary px-8 py-1 font-semibold text-primary capitalize">
+            <button className="rounded-full border border-dark px-6 py-1 text-sm font-semibold text-dark capitalize">
               video
             </button>
           </div>
@@ -35,7 +36,11 @@ export default function Documentation() {
       {/* hero section end */}
 
       {/* content section start */}
-      <div className="grid grid-flow-row gap-4 px-6 pt-6">
+      <div className="columns-1 gap-4 px-6 pt-6 md:columns-3 md:gap-6">
+        <GalleryCard />
+        <GalleryCard />
+        <GalleryCard />
+        <GalleryCard />
         <GalleryCard />
         <GalleryCard />
         <GalleryCard />
