@@ -1,6 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { Documentation, Home, Membership } from './pages'
 import { Footer, Navbar } from './components'
+import useMedia from './hooks/useMedia'
+
+useMedia.getState().fetchActivities()
 
 export default function App() {
   return (

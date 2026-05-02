@@ -1,9 +1,14 @@
 import { GalleryCard } from '../../components'
+import useMedia from '../../hooks/useMedia'
 import { Category } from './constants'
 import useActivities from './useActivities'
 
 export default function Activities() {
-  const { filteredData, isFiltered, activeFilter } = useActivities()
+  const { activities, fetchActivities } = useMedia()
+  const { isFiltered, activeFilter, setActiveFilter } = useActivities({
+    fetchActivities,
+    activities,
+  })
 
   return (
     <section className="pb-6">
@@ -23,7 +28,7 @@ export default function Activities() {
             {Object.values(Category).map((item, index) => (
               <button
                 key={index}
-                onClick={() => filteredData(item)}
+                onClick={() => setActiveFilter(item)}
                 className={`rounded-full border border-dark px-6 py-1 text-sm font-semibold capitalize transition-colors duration-300 ${activeFilter === item ? 'bg-dark text-light' : 'bg-transparent text-dark active:scale-95 active:bg-gray'} `}
               >
                 {item}
