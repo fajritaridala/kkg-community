@@ -22,7 +22,7 @@ export default function Navbar() {
   const textMenu = [
     { name: 'beranda', to: '/#' },
     { name: 'keanggotaan', to: '/membership' },
-    { name: 'dokumentasi', to: '/documentation' },
+    { name: 'kegiatan', to: '/activities' },
   ]
   return (
     <nav className="sticky top-0 z-50 w-full">
@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded p-1 transition-colors duration-75 ease-in-out active:bg-gray"
+            className="rounded-full p-1 transition-colors duration-75 ease-in-out active:bg-gray"
           >
             {isOpen ? (
               <XMarkIcon className="size-6 text-foreground-dark" />
