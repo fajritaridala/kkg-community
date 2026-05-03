@@ -11,12 +11,12 @@ export default function DocuCard(props: PropTypes) {
   const { title, category, src, year, description, alt } = props
 
   return (
-    <div className="rounded-xl bg-light shadow-sm">
+    <div>
       <div className="aspect-video w-full overflow-hidden">
         <img
           src={src}
           alt={alt}
-          className="h-full w-full rounded-t-xl object-cover object-center"
+          className="h-full w-full rounded-lg object-cover object-center"
         />
       </div>
       <div className="space-y-1 p-4 md:pt-2">

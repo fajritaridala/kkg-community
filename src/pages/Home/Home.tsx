@@ -5,31 +5,33 @@ import {
   missions,
   latestDocumentations,
   contactUs,
+  programContent,
 } from './homeConstants'
+import { ProgramCard } from '../../components/Card'
 
 export default function Home() {
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="flex h-[92vh] md:mb-18">
-        <div className="-mt-12 flex flex-col items-center-safe justify-center-safe text-center md:items-start md:justify-start md:px-12 md:text-left">
+      <div className="relative mb-18 flex h-146 md:mb-18">
+        <div className="absolute flex h-full flex-col items-center-safe justify-center-safe text-center md:items-start md:justify-start md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full px-3 py-1 shadow-md">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
             <p className="text-xs tracking-tight text-foreground capitalize">
               komunitas belajar
             </p>
           </div>
-          <h1 className="my-10 px-3 font-sansita text-4xl leading-tight font-extrabold tracking-wide text-foreground-dark capitalize md:px-0 md:text-5xl">
+          <h1 className="my-8 px-3 font-sansita text-4xl leading-tight font-extrabold tracking-wide text-foreground-dark capitalize drop-shadow-lg md:px-0 md:text-5xl">
             Membangun Pendidik Tangguh &{' '}
             <span className="text-primary">Mewujudkan Generasi Unggul</span>
           </h1>
-          <p className="mb-8 px-6 text-xs leading-relaxed text-foreground capitalize md:px-0 md:text-sm">
+          <p className="mb-10 px-6 text-xs leading-relaxed text-foreground capitalize md:px-0 md:text-sm">
             Wadah kolaborasi progresif bagi guru di Kecamatan Tinanggea untuk
             tumbuh bersama melalui inovasi, praktik baik, dan kekeluargaan.
           </p>
           <a
-            href="#"
-            className="group flex items-center-safe gap-1 rounded bg-dark p-4 text-sm font-medium tracking-tight text-neutral capitalize shadow-lg transition-transform duration-75 active:scale-95 active:shadow-none md:text-base"
+            href="/activities"
+            className="group flex items-center-safe gap-1 rounded bg-primary p-4 text-sm font-medium tracking-tight text-neutral capitalize shadow-lg transition-transform duration-75 active:scale-95 active:shadow-none md:text-base"
           >
             <p>lihat program kami</p>
             <ArrowRightIcon className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
@@ -95,8 +97,8 @@ export default function Home() {
       </div>
 
       {/* visi & misi start */}
-      <div className="px-6">
-        <h2 className="mb-4 font-bold tracking-tight text-primary capitalize md:text-lg">
+      <div className="mb-12 px-6">
+        <h2 className="mb-4 font-semibold tracking-tight text-primary capitalize md:text-lg">
           misi kami
         </h2>
 
@@ -115,25 +117,33 @@ export default function Home() {
       {/* visi & misi end */}
 
       {/* program start */}
-      {/* <div className="h-screen border">
-        <h2>program kerja kami</h2>
-          <div className="">
-
-          </div>
-      </div> */}
+      <div className="space-y-6 px-6">
+        <h2 className="font-sansita text-2xl font-semibold capitalize">
+          apa yang kami lakukan?
+        </h2>
+        <div className="grid grid-cols-1 gap-8">
+          {programContent.map((item) => (
+            <ProgramCard
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </div>
       {/* program end */}
 
       {/* documentation section start */}
-      <div className="space-y-8 py-12 md:space-y-12 md:py-12">
-        <div className="px-6 md:px-12">
-          <h1 className="text-center text-xl font-bold tracking-tight text-primary capitalize md:text-left md:text-lg">
-            kegiatan terbaru
+      <div className="py-12 md:space-y-12 md:py-12">
+        <div className="mb-6 px-6 md:px-12">
+          <h1 className="mb-1 font-semibold tracking-tight text-primary capitalize md:text-left md:text-lg">
+            kegiatan terkini
           </h1>
-          <p className="text-center text-xs leading-relaxed text-foreground first-letter:capitalize md:text-left md:text-sm">
+          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:text-left md:text-sm">
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
-        <div className="grid-cols-3 gap-4 space-y-4 px-6 md:grid md:space-y-0 md:px-12">
+        <div className="grid grid-cols-1 gap-8 px-6 md:grid-cols-3 md:space-y-0 md:px-12">
           {latestDocumentations.map((item, index) => (
             <DocuCard
               key={index}
@@ -150,10 +160,10 @@ export default function Home() {
       {/* documentation section end */}
 
       {/* contact section start */}
-      <div className="px-6 py-14 md:px-12 md:py-20">
-        <div className="rounded-2xl bg-primary px-6 py-8 md:flex md:px-12">
+      <div className="px-6 pb-14 md:px-12 md:py-20">
+        <div className="rounded-lg bg-primary px-6 py-8 md:flex md:px-12">
           <div className="space-y-4 md:w-2/3 md:space-y-6">
-            <h1 className="text-3xl font-extrabold tracking-tight text-neutral capitalize md:text-4xl">
+            <h1 className="font-sansita text-4xl font-bold tracking-wide text-neutral capitalize md:text-4xl">
               mari berkolaborasi
             </h1>
             <p className="text-xs leading-relaxed text-foreground-light first-letter:capitalize md:text-sm">
@@ -182,7 +192,7 @@ export default function Home() {
                 href="https://wa.me/6285242521571"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="tracking- rounded-lg bg-neutral px-6 py-3 text-sm font-bold text-primary capitalize md:px-10 md:py-4 md:text-base"
+                className="tracking- rounded bg-neutral p-3 text-sm font-semibold text-primary capitalize duration-75 active:scale-95 md:px-10 md:py-4 md:text-base"
               >
                 hubungi kami
               </a>

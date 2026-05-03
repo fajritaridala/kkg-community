@@ -9,7 +9,7 @@ export default function GalleryCard(props: PropTypes) {
   const { src, title, description, date } = props
 
   return (
-    <div className="mb-4 w-full rounded-xl pb-4 shadow-sm">
+    <div className="mb-4 w-full rounded-lg pb-4 shadow-sm">
       <div className="aspect-video overflow-hidden p-2">
         <img
           src={src}

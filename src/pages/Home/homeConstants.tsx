@@ -1,5 +1,8 @@
 import {
   AcademicCapIcon,
+  ArrowPathIcon,
+  BookOpenIcon,
+  ChatBubbleLeftRightIcon,
   Cog6ToothIcon,
   EnvelopeIcon,
   LightBulbIcon,
@@ -49,6 +52,27 @@ const missions = [
   },
 ]
 
+const programContent = [
+  {
+    icon: <ChatBubbleLeftRightIcon />,
+    title: 'program utama',
+    description:
+      'Peningkatan kompetensi melalui diskusi permasalahan belajar, analisis kurikulum, hingga penyusunan perangkat pembelajaran (RPP/Silabus) yang inovatif',
+  },
+  {
+    icon: <BookOpenIcon />,
+    title: 'pengembangan berkelanjutan',
+    description:
+      'Mendukung profesionalisme guru melalui Penelitian Tindakan Kelas (PTK), seminar, lokakarya, hingga publikasi jurnal ilmiah',
+  },
+  {
+    icon: <ArrowPathIcon />,
+    title: 'program umum & penunjang',
+    description:
+      'Update regulasi pendidikan terbaru serta pelatihan keterampilan praktis seperti TIK dan bahasa asing',
+  },
+]
+
 const latestDocumentations = [
   {
     src: '/documentation/fotografo-samuel-cruz-s816Ch3ji6E-unsplash.jpg',
@@ -92,4 +116,4 @@ const contactUs = [
   },
 ]
 
-export { brands, missions, latestDocumentations, contactUs }
+export { brands, missions, latestDocumentations, contactUs, programContent }
