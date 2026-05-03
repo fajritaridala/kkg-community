@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="relative mb-18 flex h-146 md:mb-18">
-        <div className="absolute flex h-full flex-col items-center-safe justify-center-safe text-center md:items-start md:justify-start md:px-12 md:text-left">
+      <div className="relative mb-18 flex h-146 md:mb-0">
+        <div className="absolute flex h-full flex-col items-center-safe justify-center-safe text-center md:static md:items-start md:justify-center md:px-12 md:text-left">
           <div className="flex items-center gap-2 rounded-full px-3 py-1 shadow-md">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
             <p className="text-xs tracking-tight text-foreground capitalize">
@@ -31,16 +31,16 @@ export default function Home() {
           </p>
           <a
             href="/activities"
-            className="group flex items-center-safe gap-1 rounded bg-primary p-4 text-sm font-medium tracking-tight text-neutral capitalize shadow-lg transition-transform duration-75 active:scale-95 active:shadow-none md:text-base"
+            className="group flex items-center-safe gap-1 rounded bg-primary p-4 text-sm font-medium tracking-tight text-neutral capitalize shadow-lg transition-transform duration-75 active:scale-95 active:shadow-none md:gap-2 md:text-base"
           >
             <p>lihat program kami</p>
-            <ArrowRightIcon className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+            <ArrowRightIcon className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1 md:size-5" />
           </a>
         </div>
         <div className="hidden pr-12 md:block">
           <div className="relative flex h-full w-full">
             <img
-              className="absolute -top-20 scale-130 rotate-180 hue-rotate-300"
+              className="absolute top-20 scale-130 rotate-180 hue-rotate-300"
               src="/blob.svg"
               alt="background decor"
             />
@@ -67,42 +67,46 @@ export default function Home() {
       {/* brand section end */}
 
       {/* profile section start */}
-      <div className="flex-row items-start px-6 py-12 md:flex md:gap-10 md:px-10">
-        <p className="font-semibold tracking-tight text-primary capitalize md:text-lg">
+      <div className="items-start px-6 py-12 md:gap-10 md:px-10">
+        <p className="font-semibold tracking-tight text-primary capitalize">
           tentang kami
         </p>
-        <div className="md:w-1/2 md:space-y-3">
-          <h1 className="my-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-4xl md:font-extrabold">
-            Komunitas Belajar untuk Masa Depan Pendidikan
-          </h1>
-          <p className="mb-5 text-justify text-xs leading-relaxed text-foreground md:text-sm">
-            Resmi didirikan pada tahun 2022, KKG GTK Gugus 1 Kec. Tinanggea
-            hadir sebagai ruang kolaborasi interaktif bagi para pendidik. Kami
-            berupaya membangun ekosistem pembelajaran yang inklusif dan relevan
-            dengan perkembangan zaman guna mencetak individu yang berdaya saing
-            tinggi.
-          </p>
-          <h1 className="mb-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-4xl md:font-extrabold">
-            mengapa kami ada?
-          </h1>
-          <p className="mb-6 text-justify text-xs leading-relaxed text-foreground md:text-sm">
-            Sesuai dengan amanat UU No. 14 Tahun 2005, kami percaya bahwa setiap
-            guru memiliki kewajiban untuk meningkatkan kompetensi secara
-            berkelanjutan. KKG hadir sebagai wadah profesional untuk menjawab
-            tantangan tersebut melalui pengembangan diri yang sejalan dengan
-            kemajuan ilmu pengetahuan dan teknologi.
-          </p>
+        <div className="w-full md:flex">
+          <div className="md:w-1/2 md:space-y-3">
+            <h1 className="my-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-3xl md:font-extrabold">
+              Komunitas Belajar untuk Masa Depan Pendidikan
+            </h1>
+            <p className="mb-5 text-justify text-xs leading-relaxed text-foreground md:text-sm">
+              Resmi didirikan pada tahun 2022, KKG GTK Gugus 1 Kec. Tinanggea
+              hadir sebagai ruang kolaborasi interaktif bagi para pendidik. Kami
+              berupaya membangun ekosistem pembelajaran yang inklusif dan
+              relevan dengan perkembangan zaman guna mencetak individu yang
+              berdaya saing tinggi.
+            </p>
+            <h1 className="mb-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-3xl md:font-extrabold">
+              mengapa kami ada?
+            </h1>
+            <p className="mb-6 text-justify text-xs leading-relaxed text-foreground md:text-sm">
+              Sesuai dengan amanat UU No. 14 Tahun 2005, kami percaya bahwa
+              setiap guru memiliki kewajiban untuk meningkatkan kompetensi
+              secara berkelanjutan. KKG hadir sebagai wadah profesional untuk
+              menjawab tantangan tersebut melalui pengembangan diri yang sejalan
+              dengan kemajuan ilmu pengetahuan dan teknologi.
+            </p>
+          </div>
+          <div className="h-1/2 md:my-auto md:flex md:w-1/2 md:p-8">
+            <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid" />
+          </div>
         </div>
-        <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid" />
       </div>
 
       {/* visi & misi start */}
-      <div className="mb-12 px-6">
+      <div className="mb-12 px-6 md:p-12">
         <h2 className="mb-4 font-semibold tracking-tight text-primary capitalize md:text-lg">
           misi kami
         </h2>
 
-        <div className="grid grid-cols-2 gap-3 md:w-1/2 md:gap-4">
+        <div className="grid w-full grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
           {/* mission section start */}
           {missions.map((item) => (
             <MissionCard
@@ -117,11 +121,11 @@ export default function Home() {
       {/* visi & misi end */}
 
       {/* program start */}
-      <div className="space-y-6 px-6">
+      <div className="space-y-6 px-6 md:px-12">
         <h2 className="font-sansita text-2xl font-semibold capitalize">
           apa yang kami lakukan?
         </h2>
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {programContent.map((item) => (
             <ProgramCard
               icon={item.icon}
@@ -134,9 +138,9 @@ export default function Home() {
       {/* program end */}
 
       {/* documentation section start */}
-      <div className="py-12 md:space-y-12 md:py-12">
+      <div className="py-12 md:space-y-12">
         <div className="mb-6 px-6 md:px-12">
-          <h1 className="mb-1 font-semibold tracking-tight text-primary capitalize md:text-left md:text-lg">
+          <h1 className="mb-1 font-semibold tracking-tight text-primary capitalize md:text-lg">
             kegiatan terkini
           </h1>
           <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:text-left md:text-sm">

@@ -26,7 +26,7 @@ export default function DocuCard(props: PropTypes) {
           </h2>
           <p className="text-2xs text-foreground capitalize italic">{year}</p>
         </div>
-        <h3 className="leading-tight font-semibold tracking-tight text-foreground-dark capitalize">
+        <h3 className="font-sansita leading-tight font-semibold tracking-wide text-foreground-dark capitalize">
           {title}
         </h3>
         <p className="text-xs leading-relaxed text-foreground first-letter:capitalize">
