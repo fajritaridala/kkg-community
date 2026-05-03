@@ -24,11 +24,11 @@ export default function GalleryCard(props: PropTypes) {
         <h2 className="leading-tight font-semibold tracking-tight text-foreground-dark capitalize md:text-lg">
           {title}
         </h2>
-        <h3 className="font-work-sans text-2xs font-semibold tracking-wide text-foreground md:text-xs">
+        <h3 className="text-2xs font-semibold tracking-wide text-foreground md:text-xs">
           {date}
         </h3>
 
-        <p className="font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize">
+        <p className="text-xs leading-relaxed text-foreground first-letter:capitalize">
           {description}
         </p>
       </div>

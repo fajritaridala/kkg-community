@@ -1,33 +1,38 @@
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { DocuCard, MissionCard, VisionCard } from '../../components'
-import { brands, missions, latestDocumentations } from './homeConstants'
+import {
+  brands,
+  missions,
+  latestDocumentations,
+  contactUs,
+} from './homeConstants'
 
 export default function Home() {
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
-      <div className="flex h-[92vh] items-center md:mb-18">
-        <div className="flex h-4/5 flex-col items-center-safe justify-center-safe space-y-6 text-center md:items-start md:justify-start md:px-12 md:text-left">
-          <div className="flex items-center gap-2 rounded-full border-t border-light px-3 py-1 shadow-sm">
+      <div className="flex h-[92vh] md:mb-18">
+        <div className="-mt-12 flex flex-col items-center-safe justify-center-safe text-center md:items-start md:justify-start md:px-12 md:text-left">
+          <div className="flex items-center gap-2 rounded-full px-3 py-1 shadow-md">
             <div className="h-2 w-2 rounded-full bg-red-500"></div>
-            <p className="font-work-sans text-xs tracking-tight text-foreground capitalize">
+            <p className="text-xs tracking-tight text-foreground capitalize">
               komunitas belajar
             </p>
           </div>
-          <h1 className="px-3 text-4xl leading-tight font-extrabold tracking-tight text-foreground-dark capitalize md:px-0 md:text-5xl">
-            mencerdaskan bangsa{' '}
-            <span className="text-primary">melalui kolaborasi</span> guru
-            kreatif
+          <h1 className="my-10 px-3 font-sansita text-4xl leading-tight font-extrabold tracking-wide text-foreground-dark capitalize md:px-0 md:text-5xl">
+            Membangun Pendidik Tangguh &{' '}
+            <span className="text-primary">Mewujudkan Generasi Unggul</span>
           </h1>
-          <p className="px-6 font-work-sans text-xs leading-relaxed text-foreground capitalize md:px-0 md:text-sm">
-            pusat pemberdayaan dan pengembangan profesionalisme guru SD di
-            Kecamatan Tinanggea, Kabupaten Konawe Selatan.
+          <p className="mb-8 px-6 text-xs leading-relaxed text-foreground capitalize md:px-0 md:text-sm">
+            Wadah kolaborasi progresif bagi guru di Kecamatan Tinanggea untuk
+            tumbuh bersama melalui inovasi, praktik baik, dan kekeluargaan.
           </p>
           <a
             href="#"
-            className="my-10 rounded-lg bg-primary px-6 py-3 text-sm font-bold tracking-tight text-neutral capitalize md:text-base"
+            className="group flex items-center-safe gap-1 rounded bg-dark p-4 text-sm font-medium tracking-tight text-neutral capitalize shadow-lg transition-transform duration-75 active:scale-95 active:shadow-none md:text-base"
           >
-            hubungi kami
+            <p>lihat program kami</p>
+            <ArrowRightIcon className="size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
           </a>
         </div>
         <div className="hidden pr-12 md:block">
@@ -60,51 +65,71 @@ export default function Home() {
       {/* brand section end */}
 
       {/* profile section start */}
-      <div className="flex-row items-start space-y-4 px-6 py-8 md:flex md:gap-10 md:space-y-0 md:px-10">
-        <div className="space-y-2 md:w-1/2 md:space-y-3">
-          <p className="font-bold tracking-tight text-primary capitalize md:text-lg">
-            tentang kami
-          </p>
-          <h1 className="text-lg leading-tight font-bold tracking-tight text-foreground-dark capitalize md:text-4xl md:font-extrabold">
-            membangun sinergi, meningkatkan kompetensi.
+      <div className="flex-row items-start px-6 py-12 md:flex md:gap-10 md:px-10">
+        <p className="font-semibold tracking-tight text-primary capitalize md:text-lg">
+          tentang kami
+        </p>
+        <div className="md:w-1/2 md:space-y-3">
+          <h1 className="my-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-4xl md:font-extrabold">
+            Komunitas Belajar untuk Masa Depan Pendidikan
           </h1>
-          <p className="text-justify font-work-sans text-xs leading-relaxed text-foreground md:text-sm">
-            Komunitas Belajar adalah ruang kolaborasi progresif yang resmi
-            didirikan pada tahun 2022. Komunitas ini hadir sebagai wadah
-            interaktif bagi para pendidik untuk saling berbagi pengetahuan,
-            mengembangkan keterampilan, dan tumbuh bersama. Sejak awal
-            berdirinya, komunitas ini berkomitmen kuat untuk menciptakan
-            ekosistem pembelajaran yang inklusif, inovatif, dan relevan dengan
-            perkembangan zaman guna mencetak individu-individu yang berdaya
-            saing tinggi.
+          <p className="mb-5 text-justify text-xs leading-relaxed text-foreground md:text-sm">
+            Resmi didirikan pada tahun 2022, KKG GTK Gugus 1 Kec. Tinanggea
+            hadir sebagai ruang kolaborasi interaktif bagi para pendidik. Kami
+            berupaya membangun ekosistem pembelajaran yang inklusif dan relevan
+            dengan perkembangan zaman guna mencetak individu yang berdaya saing
+            tinggi.
           </p>
-          {/* vision section start */}
-          <div className="py-3 md:py-0">
-            <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid." />
-          </div>
-          {/* vision section end */}
+          <h1 className="mb-3 font-sansita text-2xl leading-tight font-bold tracking-wide text-foreground-dark capitalize md:text-4xl md:font-extrabold">
+            mengapa kami ada?
+          </h1>
+          <p className="mb-6 text-justify text-xs leading-relaxed text-foreground md:text-sm">
+            Sesuai dengan amanat UU No. 14 Tahun 2005, kami percaya bahwa setiap
+            guru memiliki kewajiban untuk meningkatkan kompetensi secara
+            berkelanjutan. KKG hadir sebagai wadah profesional untuk menjawab
+            tantangan tersebut melalui pengembangan diri yang sejalan dengan
+            kemajuan ilmu pengetahuan dan teknologi.
+          </p>
         </div>
+        <VisionCard description="Menjadi wadah kolaborasi pendidik yang inovatif untuk mewujudkan pembelajaran yang bermakna, menyenangkan, dan berpusat pada murid" />
+      </div>
 
-        <div className="my-auto grid-cols-2 space-y-4 md:grid md:w-1/2 md:gap-4 md:space-y-0">
+      {/* visi & misi start */}
+      <div className="px-6">
+        <h2 className="mb-4 font-bold tracking-tight text-primary capitalize md:text-lg">
+          misi kami
+        </h2>
+
+        <div className="grid grid-cols-2 gap-3 md:w-1/2 md:gap-4">
           {/* mission section start */}
-          {missions.map((item, index) => (
+          {missions.map((item) => (
             <MissionCard
               icon={item.icon}
-              index={index}
+              title={item.title}
               description={item.description}
             />
           ))}
           {/* mission section end */}
         </div>
       </div>
+      {/* visi & misi end */}
+
+      {/* program start */}
+      {/* <div className="h-screen border">
+        <h2>program kerja kami</h2>
+          <div className="">
+
+          </div>
+      </div> */}
+      {/* program end */}
 
       {/* documentation section start */}
-      <div className="space-y-8 bg-light-gray py-8 md:space-y-12 md:py-12">
-        <div className="space-y-1 px-6 md:space-y-2">
-          <h1 className="text-center text-xl font-bold tracking-tight text-foreground-dark capitalize md:text-2xl">
-            kegiatan terkini
+      <div className="space-y-8 py-12 md:space-y-12 md:py-12">
+        <div className="px-6 md:px-12">
+          <h1 className="text-center text-xl font-bold tracking-tight text-primary capitalize md:text-left md:text-lg">
+            kegiatan terbaru
           </h1>
-          <p className="text-center font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize md:text-sm">
+          <p className="text-center text-xs leading-relaxed text-foreground first-letter:capitalize md:text-left md:text-sm">
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
@@ -131,32 +156,24 @@ export default function Home() {
             <h1 className="text-3xl font-extrabold tracking-tight text-neutral capitalize md:text-4xl">
               mari berkolaborasi
             </h1>
-            <p className="font-work-sans text-xs leading-relaxed text-foreground-light first-letter:capitalize md:text-sm">
+            <p className="text-xs leading-relaxed text-foreground-light first-letter:capitalize md:text-sm">
               punya pertanyaan seputar kegiatan gugus atau ingin berbagi ilmu
               dengan komunitas kami? kami sangat terbuka untuk berdiskusi.
             </p>
             <div className="gap-6 space-y-3 md:flex md:space-y-0">
-              <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-neutral/20 p-1">
-                  <EnvelopeIcon className="size-4 text-neutral" />
-                </div>
-                <p className="font-work-sans text-xs text-neutral md:text-sm">
-                  kkg.gugus1.tinanggea@gmail.com
-                </p>
-              </div>
-              <a
-                href="https://wa.me/6285242521571"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3"
-              >
-                <div className="rounded-lg bg-neutral/20 p-1">
-                  <PhoneIcon className="size-4 text-neutral" />
-                </div>
-                <p className="font-work-sans text-xs text-neutral md:text-sm">
-                  +62 852 4252 1571
-                </p>
-              </a>
+              {contactUs.map((item) => (
+                <a
+                  className="flex items-center gap-3"
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="rounded-lg bg-neutral/20 p-1">
+                    <div className="size-4 text-neutral">{item.icon}</div>
+                  </div>
+                  <p className="text-xs text-neutral md:text-sm">{item.body}</p>
+                </a>
+              ))}
             </div>
           </div>
           <div className="mt-4 items-center-safe justify-center-safe md:flex md:w-1/3">

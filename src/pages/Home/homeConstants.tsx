@@ -1,9 +1,11 @@
 import {
   AcademicCapIcon,
   Cog6ToothIcon,
+  EnvelopeIcon,
   LightBulbIcon,
+  PhoneIcon,
   UserGroupIcon,
-} from '@heroicons/react/24/solid'
+} from '@heroicons/react/24/outline'
 
 const brands = [
   {
@@ -23,23 +25,27 @@ const brands = [
 const missions = [
   {
     icon: <AcademicCapIcon />,
+    title: 'berbagi praktik baik',
     description:
-      'Rutin mengadakan diskusi untuk berbagi pengalaman dan solusi terkait tantangan mengajar di kelas',
+      'Berdiskusi secara rutin untuk menemukan solusi atas tantangan mengajar di kelas',
   },
   {
     icon: <LightBulbIcon />,
+    title: 'meningkatakan kompetensi',
     description:
-      'Memfasilitasi pengembangan diri guru melalui pelatihan, bedah buku, atau pemanfaatan teknologi pendidikan',
+      'Memfasilitasi guru dalam penguasaan teknologi pendidikan dan pengembangan diri',
   },
   {
     icon: <Cog6ToothIcon />,
+    title: 'menciptakan inovasi',
     description:
-      'Merancang alat peraga dan metode belajar yang kreatif agar siswa lebih aktif dan bersemangat.',
+      'Merancang metode belajar kreatif agar siswa lebih aktif dan bersemangat',
   },
   {
     icon: <UserGroupIcon />,
+    title: 'membangun kekeluargaan',
     description:
-      'Menciptakan lingkungan kerja sesama guru yang saling mendukung, positif, dan tanpa penghakiman',
+      'Mewujudkan lingkungan kerja yang positif, suportif, dan tanpa penghakiman',
   },
 ]
 
@@ -73,4 +79,17 @@ const latestDocumentations = [
   },
 ]
 
-export { brands, missions, latestDocumentations }
+const contactUs = [
+  {
+    icon: <EnvelopeIcon />,
+    href: 'mailto:nurhatma56@guru.sd.belajar.id',
+    body: 'nurhatma56@guru.sd.belajar.id',
+  },
+  {
+    icon: <PhoneIcon />,
+    href: 'https://wa.me/6285242521571',
+    body: '+62-852-4252-1571',
+  },
+]
+
+export { brands, missions, latestDocumentations, contactUs }

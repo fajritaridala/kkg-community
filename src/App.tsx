@@ -7,7 +7,7 @@ useMedia.getState().fetchActivities()
 
 export default function App() {
   return (
-    <div className="font-jakarta-plus">
+    <div className="font-poppins">
       <Navbar />
 
       <Routes>

@@ -29,7 +29,7 @@ export default function DocuCard(props: PropTypes) {
         <h3 className="leading-tight font-semibold tracking-tight text-foreground-dark capitalize">
           {title}
         </h3>
-        <p className="font-work-sans text-xs leading-relaxed text-foreground first-letter:capitalize">
+        <p className="text-xs leading-relaxed text-foreground first-letter:capitalize">
           {description}
         </p>
       </div>

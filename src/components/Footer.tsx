@@ -17,7 +17,7 @@ export default function Footer() {
                 KKG Gugus 1 R. A. Kartini
               </h2>
             </div>
-            <p className="text-center font-work-sans text-xs leading-relaxed text-foreground-muted first-letter:capitalize md:w-sm md:text-left md:text-sm">
+            <p className="text-center text-xs leading-relaxed text-foreground-muted first-letter:capitalize md:w-sm md:text-left md:text-sm">
               meningkatkan kualitas pendidikan dasar di kecamatan tinanggea,
               sulawesi tenggara
             </p>
