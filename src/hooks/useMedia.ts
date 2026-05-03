@@ -43,18 +43,21 @@ const useMedia = create<IMediaStore>((set, get) => ({
         services.getVideos(),
       ])
 
-      const cleanData = (item: IData) => ({
-        src: helpers.driveUrlFormat(item.unggah_dokumentasi_kegiatan),
-        title: item.judul_kegiatan,
-        date: helpers.dateFormat(item.tanggal_kegiatan),
-        description: item.deskripsi_kegiatan,
-      })
+      const cleanData = (item: IData) => {
+        const firstImg = item.unggah_dokumentasi_kegiatan.split(',')[0].trim()
+
+        return {
+          src: helpers.driveUrlFormat(firstImg),
+          title: item.judul_kegiatan,
+          date: helpers.dateFormat(item.tanggal_kegiatan),
+          description: item.deskripsi_kegiatan,
+        }
+      }
 
       const mediaData = {
         picture: getPictures.map(cleanData),
         video: getVideos.map(cleanData),
       }
-      console.log(mediaData)
 
       set({ activities: mediaData, isLoading: false })
     } catch (error) {

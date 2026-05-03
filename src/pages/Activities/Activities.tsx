@@ -1,10 +1,11 @@
 import { GalleryCard } from '../../components'
+import GalleryCardSkeleton from '../../components/Skeleton/GallerySkeleton'
 import useMedia from '../../hooks/useMedia'
 import { Category } from './constants'
 import useActivities from './useActivities'
 
 export default function Activities() {
-  const { activities, fetchActivities } = useMedia()
+  const { activities, fetchActivities, isLoading } = useMedia()
   const { isFiltered, activeFilter, setActiveFilter } = useActivities({
     fetchActivities,
     activities,
@@ -48,17 +49,27 @@ export default function Activities() {
       {/* hero section end */}
 
       {/* content section start */}
-      <div className="columns-1 gap-4 px-6 pt-6 md:columns-3 md:gap-6">
-        {isFiltered.map((item, index) => (
-          <GalleryCard
-            key={index}
-            src={item.src}
-            title={item.title}
-            date={item.date}
-            description={item.description}
-          />
-        ))}
+      <div className="grid grid-cols-1 gap-4 px-6 pt-6 md:grid-cols-3 md:gap-6">
+        {isLoading ? (
+          <>
+            <GalleryCardSkeleton />
+            <GalleryCardSkeleton />
+          </>
+        ) : (
+          <>
+            {isFiltered.map((item, index) => (
+              <GalleryCard
+                key={index}
+                src={item.src}
+                title={item.title}
+                date={item.date}
+                description={item.description}
+              />
+            ))}
+          </>
+        )}
       </div>
+
       {/* content section end */}
     </section>
   )

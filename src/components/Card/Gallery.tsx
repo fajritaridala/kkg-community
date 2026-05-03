@@ -9,13 +9,15 @@ export default function GalleryCard(props: PropTypes) {
   const { src, title, description, date } = props
 
   return (
-    <div className="mb-4 inline-block w-full break-inside-avoid rounded-xl pb-4 shadow-sm">
+    <div className="mb-4 w-full rounded-xl pb-4 shadow-sm">
       <div className="aspect-video overflow-hidden p-2">
         <img
           src={src}
           alt={`Dokuementasi ${title}`}
           referrerPolicy="no-referrer"
-          className="h-full w-full rounded-lg object-cover object-center"
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full rounded-lg bg-gray object-cover object-center"
         />
       </div>
       <div className="space-y-1 px-4">
