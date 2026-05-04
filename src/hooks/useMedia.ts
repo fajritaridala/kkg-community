@@ -4,7 +4,7 @@ import services from '../services/api'
 import helpers from '../utils/helpers'
 
 export interface IMediaData {
-  src: string
+  images: string[]
   title: string
   date: string
   description: string
@@ -44,10 +44,13 @@ const useMedia = create<IMediaStore>((set, get) => ({
       ])
 
       const cleanData = (item: IData) => {
-        const firstImg = item.unggah_dokumentasi_kegiatan.split(',')[0].trim()
+        const urls = item.unggah_dokumentasi_kegiatan
+          .split(',')
+          .map((url) => helpers.driveUrlFormat(url.trim()))
+          .filter(Boolean)
 
         return {
-          src: helpers.driveUrlFormat(firstImg),
+          images: urls,
           title: item.judul_kegiatan,
           date: helpers.dateFormat(item.tanggal_kegiatan),
           description: item.deskripsi_kegiatan,
@@ -58,6 +61,7 @@ const useMedia = create<IMediaStore>((set, get) => ({
         picture: getPictures.map(cleanData),
         video: getVideos.map(cleanData),
       }
+      if (Object.keys(mediaData).length < 1) set({ isLoading: true })
 
       set({ activities: mediaData, isLoading: false })
     } catch (error) {

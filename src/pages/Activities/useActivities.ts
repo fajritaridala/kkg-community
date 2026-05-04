@@ -16,6 +16,7 @@ export default function useActivities(props: PropTypes) {
   }, [fetchActivities])
 
   const isFiltered = activities[activeFilter]
+  console.log(activities)
 
   return { isFiltered, setActiveFilter, activeFilter }
 }

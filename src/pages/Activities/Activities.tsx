@@ -60,7 +60,7 @@ export default function Activities() {
             {isFiltered.map((item, index) => (
               <GalleryCard
                 key={index}
-                src={item.src}
+                src={item.images}
                 title={item.title}
                 date={item.date}
                 description={item.description}

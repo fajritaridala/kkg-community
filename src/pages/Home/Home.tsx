@@ -21,7 +21,7 @@ export default function Home() {
               komunitas belajar
             </p>
           </div>
-          <h1 className="my-8 px-3 font-sansita text-4xl leading-tight font-extrabold tracking-wide text-foreground-dark capitalize drop-shadow-lg md:px-0 md:text-5xl">
+          <h1 className="my-8 px-3 font-sansita text-4xl leading-tight font-extrabold tracking-wide text-foreground-dark capitalize md:px-0 md:text-5xl">
             Membangun Pendidik Tangguh &{' '}
             <span className="text-primary">Mewujudkan Generasi Unggul</span>
           </h1>
