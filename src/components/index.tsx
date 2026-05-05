@@ -1,19 +1,5 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
-import {
-  GalleryCard,
-  DocuCard,
-  MemberCard,
-  MissionCard,
-  VisionCard,
-} from './Card'
+import { GalleryCard, MemberCard, MissionCard, VisionCard } from './Card'
 
-export {
-  Navbar,
-  Footer,
-  GalleryCard,
-  DocuCard,
-  MemberCard,
-  MissionCard,
-  VisionCard,
-}
+export { Navbar, Footer, GalleryCard, MemberCard, MissionCard, VisionCard }
