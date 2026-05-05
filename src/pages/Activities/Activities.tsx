@@ -10,20 +10,18 @@ export default function Activities() {
     fetchActivities,
     activities,
   })
-  console.log(isFiltered)
 
   return (
     <section className="pb-6">
       {/* hero section start */}
       <div className="relative flex flex-col border-b border-gray">
         <div className="relative z-10 space-y-3 bg-light/60 px-6 pt-26 pb-6 text-center backdrop-blur-2xl md:pt-44 md:pb-8">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-4xl">
-            kegiatan kami
+          <h1 className="font-sansita text-2xl font-bold tracking-wide text-foreground-dark capitalize md:mx-auto md:w-sm md:text-5xl md:leading-tight">
+            Jejak Perjalanan Profesionalisme Guru
           </h1>
-          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:mx-auto md:w-xl md:pt-3 md:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-            corporis harum. Neque sunt minus numquam similique qui, rerum magnam
-            iusto eligendi nesciunt fugiat!
+          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:mx-auto md:w-xl md:text-sm">
+            Menyajikan setiap momen pengembangan diri, berbagi praktik baik, dan
+            inovasi pembelajaran untuk mencerdaskan generasi bangsa
           </p>
           {/* filter section start */}
           <div className="mt-8 flex w-full justify-center-safe gap-4 md:mt-12">

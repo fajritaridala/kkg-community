@@ -4,15 +4,14 @@ export default function Membership() {
   return (
     <section className="bg-light py-14">
       {/* hero section start */}
-      <div className="my-22 flex w-full items-center-safe md:px-14">
-        <div className="w-full space-y-4 md:w-1/2">
-          <h1 className="text-center text-3xl font-bold tracking-tight text-foreground-dark capitalize md:text-left md:text-5xl">
-            keanggotaan
+      <div className="my-8 flex w-full items-center-safe md:my-22 md:px-14">
+        <div className="w-full space-y-2 px-6 md:w-1/2 md:space-y-4">
+          <h1 className="font-sansita text-3xl leading-tight font-bold tracking-tight text-foreground-dark capitalize md:text-left md:text-5xl">
+            Tumbuh Bersama Menginspirasi Sesama
           </h1>
-          <p className="hidden w-lg text-sm leading-relaxed text-foreground first-letter:capitalize md:block">
-            kepengurusan Kelompok Kerja Guru gugus 1 R. A. Kartini berdedikasi
-            untuk memajukan pendidikan dan profesionalisme pendidik melalui
-            kolaborasi yang terstuktur.
+          <p className="text-xs leading-relaxed text-foreground first-letter:capitalize md:block md:w-lg md:text-sm">
+            Berkenalan dengan rekan sejawat, bertukar praktik baik, dan temukan
+            ruang tumbuh yang mendukung perjalanan karier Anda sebagai pendidik.
           </p>
         </div>
         <div className="hidden w-1/2 md:block">
