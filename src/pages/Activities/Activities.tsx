@@ -10,6 +10,7 @@ export default function Activities() {
     fetchActivities,
     activities,
   })
+  console.log(isFiltered)
 
   return (
     <section className="pb-6">
@@ -52,6 +53,7 @@ export default function Activities() {
       <div className="grid grid-cols-1 gap-4 px-6 pt-6 md:grid-cols-3 md:gap-6">
         {isLoading ? (
           <>
+            <GalleryCardSkeleton />
             <GalleryCardSkeleton />
             <GalleryCardSkeleton />
           </>

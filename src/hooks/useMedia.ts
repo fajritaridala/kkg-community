@@ -17,8 +17,8 @@ export interface IMediaCategory {
 
 export interface IMediaStore {
   activities: IMediaCategory
-  isLoading: boolean
-  error: string | null
+  isLoading?: boolean
+  error?: string | null
   fetchActivities: () => Promise<void>
 }
 

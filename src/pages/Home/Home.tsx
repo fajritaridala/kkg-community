@@ -1,15 +1,15 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
-import { DocuCard, MissionCard, VisionCard } from '../../components'
-import {
-  brands,
-  missions,
-  latestDocumentations,
-  contactUs,
-  programContent,
-} from './homeConstants'
-import { ProgramCard } from '../../components/Card'
+import { MissionCard, VisionCard } from '../../components'
+import { brands, missions, contactUs, programContent } from './homeConstants'
+import { GalleryCard, ProgramCard } from '../../components/Card'
+import useMedia from '../../hooks/useMedia'
+import useHome from './useHome'
+import GalleryCardSkeleton from '../../components/Skeleton/GallerySkeleton'
 
 export default function Home() {
+  const { activities, isLoading } = useMedia()
+  const { data } = useHome({ activities })
+
   return (
     <section className="overflow-hidden pt-14">
       {/* hero section start */}
@@ -138,7 +138,7 @@ export default function Home() {
       {/* program end */}
 
       {/* documentation section start */}
-      <div className="py-12 md:space-y-12">
+      <div className="pt-12 pb-6 md:space-y-12 md:py-0">
         <div className="mb-6 px-6 md:px-12">
           <h1 className="mb-1 font-semibold tracking-tight text-primary capitalize md:text-lg">
             kegiatan terkini
@@ -147,24 +147,32 @@ export default function Home() {
             lihat keseruan dan semangat belajar kami di lapangan.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 px-6 md:grid-cols-3 md:space-y-0 md:px-12">
-          {latestDocumentations.map((item, index) => (
-            <DocuCard
-              key={index}
-              src={item.src}
-              alt={item.alt}
-              category={item.category}
-              year={item.year}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
+        <div className="grid grid-cols-1 px-6 md:grid-cols-3 md:space-y-0 md:px-12">
+          {isLoading ? (
+            <>
+              <GalleryCardSkeleton />
+              <GalleryCardSkeleton />
+              <GalleryCardSkeleton />
+            </>
+          ) : (
+            <>
+              {data.map((item, index) => (
+                <GalleryCard
+                  key={index}
+                  src={item.images}
+                  title={item.title}
+                  date={item.date}
+                  description={item.description}
+                />
+              ))}
+            </>
+          )}
         </div>
       </div>
       {/* documentation section end */}
 
       {/* contact section start */}
-      <div className="px-6 pb-14 md:px-12 md:py-20">
+      <div className="px-6 pb-14 md:px-12 md:py-12">
         <div className="rounded-lg bg-primary px-6 py-8 md:flex md:px-12">
           <div className="space-y-4 md:w-2/3 md:space-y-6">
             <h1 className="font-sansita text-4xl font-bold tracking-wide text-neutral capitalize md:text-4xl">

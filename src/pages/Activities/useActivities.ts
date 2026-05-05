@@ -1,13 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Category } from './constants'
-import type { IMediaCategory } from '../../hooks/useMedia'
+import type { IMediaStore } from '../../hooks/useMedia'
 
-type PropTypes = {
-  fetchActivities: () => void
-  activities: IMediaCategory
-}
-
-export default function useActivities(props: PropTypes) {
+export default function useActivities(props: IMediaStore) {
   const { fetchActivities, activities } = props
   const [activeFilter, setActiveFilter] = useState<Category>(Category.Picture)
 
@@ -16,7 +11,6 @@ export default function useActivities(props: PropTypes) {
   }, [fetchActivities])
 
   const isFiltered = activities[activeFilter]
-  console.log(activities)
 
   return { isFiltered, setActiveFilter, activeFilter }
 }
